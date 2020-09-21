@@ -1,7 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
-class Suit
+class suit
 {
     const TYPE_SPADE = 'Spade';
     const TYPE_HEART = 'Heart';

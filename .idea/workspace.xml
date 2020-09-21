@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fba188c5-0611-4479-a0b0-dd81f4cf36cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blackjack.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/Player.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/card.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/card.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/deck.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/deck.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/suit.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/suit.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.php" beforeDir="false" afterPath="$PROJECT_DIR$/example.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600675463454</updated>
-      <workItem from="1600675464547" duration="780000" />
+      <workItem from="1600675464547" duration="4608000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1600676095429</created>
@@ -80,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600676142188</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial setup">
+      <created>1600676267959</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600676267959</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,13 +115,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="initial setup" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1600675754112">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1600679549773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600675754112" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600676159087">
+    <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600679549773" />
+    <state x="784" y="242" key="NewPhpClassDialog" timestamp="1600679380707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600676159087" />
+    <state x="784" y="242" key="NewPhpClassDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600679380707" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1600679390326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600679390326" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600676273329">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600676273329" />
   </component>
 </project>

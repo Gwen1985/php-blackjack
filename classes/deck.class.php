@@ -1,7 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
-class Deck
+class deck
 {
     private const CARDS_PER_SUIT = 14;
 

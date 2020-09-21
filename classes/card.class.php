@@ -1,7 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
-class Card
+class card
 {
     private const ACE_VALUE = 11;
     private const FACE_VALUE = 10;
