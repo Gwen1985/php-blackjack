@@ -39,5 +39,3 @@ class Deck
         return array_shift($this->cards);
     }
 }
-
-php
