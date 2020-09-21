@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fba188c5-0611-4479-a0b0-dd81f4cf36cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blackjack.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classes/Player.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blackjack.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Blackjack.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Player.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Player.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/card.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/card.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/deck.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/deck.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/suit.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/suit.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/suit.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Suit.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.php" beforeDir="false" afterPath="$PROJECT_DIR$/example.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1hoRTDY6ZwzbcCtoCxRqebMz4Ie" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -48,6 +50,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.kalessil.phpStorm.phpInspectionsEA.EAApplicationConfiguration" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -63,7 +66,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600675463454</updated>
-      <workItem from="1600675464547" duration="4608000" />
+      <workItem from="1600675464547" duration="11615000" />
+      <workItem from="1600696345802" duration="920000" />
+      <workItem from="1600697482511" duration="2842000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1600676095429</created>
@@ -93,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600676267959</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="created class files (player.class.php / blackjack.class.php)">
+      <created>1600680207654</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600680207654</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,24 +121,34 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial setup" />
+    <MESSAGE value="created class files (player.class.php / blackjack.class.php)" />
+    <option name="LAST_COMMIT_MESSAGE" value="created class files (player.class.php / blackjack.class.php)" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="667" y="162" key="#PHP" timestamp="1600696158672">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="162" key="#PHP/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600696158672" />
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1600679549773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600679549773" />
-    <state x="784" y="242" key="NewPhpClassDialog" timestamp="1600679380707">
+    <state x="784" y="242" key="NewPhpClassDialog" timestamp="1600682148070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="784" y="242" key="NewPhpClassDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600679380707" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1600679390326">
+    <state x="784" y="242" key="NewPhpClassDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600682148070" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1600691602735">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600679390326" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600691602735" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1600697264912">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600697264912" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600676273329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

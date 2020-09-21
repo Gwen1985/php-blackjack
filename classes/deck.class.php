@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class deck
+class Deck
 {
     private const CARDS_PER_SUIT = 14;
 

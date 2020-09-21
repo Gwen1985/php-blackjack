@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class suit
+class Suit
 {
     const TYPE_SPADE = 'Spade';
     const TYPE_HEART = 'Heart';

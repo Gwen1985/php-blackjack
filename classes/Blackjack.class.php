@@ -1,10 +1,11 @@
 <?php
 
-class blackjack {
+class Blackjack
+{
 
-    private $player;
+    private Player $player;
     private $dealer;
-    private $deck;
+    private Deck $deck;
 
     /**
      * Blackjack constructor.
@@ -13,12 +14,15 @@ class blackjack {
      * @param $deck
      */
 
-    public function __construct($player, $dealer, $deck)
+    public function __construct()
     {
-        $this->player = $player;
-        $this->dealer = $dealer;
-        $this->deck = $deck;
+        $this->deck = new Deck();
+        $this->deck->shuffle();
+
+        $this->player = new Player($this->deck);
+        $this->dealer = new Player($this->deck);
     }
+
 
     /**
      * @return mixed
@@ -39,10 +43,10 @@ class blackjack {
     /**
      * @return mixed
      */
-    public function getPlayer()
-    {
-        return $this->player;
-    }
+//    public function getPlayer()
+//    {
+//        return $this->player;
+//    }
 
 
 }

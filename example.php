@@ -18,10 +18,20 @@ function autoLoader($className): void
 //require 'classes/card.class.php';
 //require 'classes/deck.class.php';
 
-$deck = new Deck();
-$deck->shuffle();
+//$deck = new Deck();
+//$deck->shuffle();
+//
+//foreach ($deck->getCards() as $card) {
+//    echo $card->getUnicodeCharacter(true);
+//    echo '<br>';
+//}
 
-foreach ($deck->getCards() as $card) {
-    echo $card->getUnicodeCharacter(true);
-    echo '<br>';
-}
+$blackjack = new Blackjack();
+
+echo "<pre>";
+print_r($blackjack->getPlayer());
+echo "</pre>";
+
+echo "<pre>";
+print_r($blackjack->getDealer());
+echo "</pre>";

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class card
+class Card
 {
     private const ACE_VALUE = 11;
     private const FACE_VALUE = 10;
