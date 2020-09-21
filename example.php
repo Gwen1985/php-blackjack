@@ -3,7 +3,7 @@ IntelliJ IDEAPhpStormWebStorm
 declare(strict_types=1);
 
 require 'classes/Suit.class.php';
-require 'slasses/card.class.php';
+require 'classes/card.class.php';
 require 'classes/deck.class.php';
 
 $deck = new Deck();
