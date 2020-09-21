@@ -1,4 +1,3 @@
-IntelliJ IDEAPhpStormWebStorm
 <?php
 declare(strict_types=1);
 
