@@ -11,9 +11,8 @@
 <!--<form action="Player.class.php" method="post">-->
 <!--<button id="hit" type="submit">Hit a card</button>-->
 
-<form action="index.php" method="post">
-    <input type="submit" name="hit" value="Hit Card"/>
-
+<form action="classes/Blackjack.class.php" method="post">
+    <input type="submit" name="hitCard" value="Hit Card" onclick="getCard()">
 
 </body>
 </html>

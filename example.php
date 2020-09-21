@@ -15,12 +15,12 @@ function autoLoader($className): void
 }
 
 //require 'classes/Suit.class.php';
-//require 'classes/card.class.php';
-//require 'classes/deck.class.php';
+//require 'classes/Card.class.php';
+//require 'classes/Deck.class.php';
 
 //$deck = new Deck();
 //$deck->shuffle();
-//
+
 //foreach ($deck->getCards() as $card) {
 //    echo $card->getUnicodeCharacter(true);
 //    echo '<br>';

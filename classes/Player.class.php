@@ -5,6 +5,7 @@ class Player
     private array $cards;
     private bool $lost = false;
 
+
     /**
      * player constructor.
      * @param array $cards
@@ -14,28 +15,32 @@ class Player
         $playerFirstCard = $deck->drawCard();
         $playerSecondCard = $deck->drawCard();
         $this->cards = [$playerFirstCard, $playerSecondCard];
+
+        $dealerFirstCard = $deck->drawCard();
+        $dealerSecondCard = $deck->drawCard();
+        $this->cards = [$dealerFirstCard, $dealerSecondCard];
     }
 
     //public methods
     public function hit(Deck $deck)
     {
-        return $playerNextCard = $deck->drawCard();
-
+        $deck->drawCard();
+        $this->cards = [];
     }
 
-        public
-        function surrender()
-        {
-        }
-
-        public
-        function getScore()
-        {
-        }
-
-        public
-        function hasLost()
-        {
-        }
-
+    public
+    function surrender()
+    {
     }
+
+    public
+    function getScore()
+    {
+    }
+
+    public
+    function hasLost()
+    {
+    }
+
+}

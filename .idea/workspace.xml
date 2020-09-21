@@ -20,14 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fba188c5-0611-4479-a0b0-dd81f4cf36cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackjack.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Blackjack.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Player.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Player.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/card.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/card.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/deck.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/deck.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/suit.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Suit.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/card.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Card.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/deck.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Deck.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.php" beforeDir="false" afterPath="$PROJECT_DIR$/example.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,8 @@
       <updated>1600675463454</updated>
       <workItem from="1600675464547" duration="11615000" />
       <workItem from="1600696345802" duration="920000" />
-      <workItem from="1600697482511" duration="2842000" />
+      <workItem from="1600697482511" duration="2919000" />
+      <workItem from="1600705576137" duration="6380000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1600676095429</created>
@@ -105,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600680207654</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="created Blackjack.class.php + index.php =&gt; making the hit button work to draw an extra card.">
+      <created>1600700398891</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600700398891</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +132,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial setup" />
     <MESSAGE value="created class files (player.class.php / blackjack.class.php)" />
-    <option name="LAST_COMMIT_MESSAGE" value="created class files (player.class.php / blackjack.class.php)" />
+    <MESSAGE value="created Blackjack.class.php + index.php =&gt; making the hit button work to draw an extra card." />
+    <option name="LAST_COMMIT_MESSAGE" value="created Blackjack.class.php + index.php =&gt; making the hit button work to draw an extra card." />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="162" key="#PHP" timestamp="1600696158672">
@@ -149,9 +156,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600697264912" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600676273329">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600700406246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600676273329" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600700406246" />
   </component>
 </project>
