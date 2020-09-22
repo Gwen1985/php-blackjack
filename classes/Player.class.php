@@ -14,18 +14,18 @@ class Player
     {
         $playerFirstCard = $deck->drawCard();
         $playerSecondCard = $deck->drawCard();
-        $this->cards = [$playerFirstCard, $playerSecondCard];
+        $this->cards  = [$playerFirstCard, $playerSecondCard];
 
-        $dealerFirstCard = $deck->drawCard();
-        $dealerSecondCard = $deck->drawCard();
-        $this->cards = [$dealerFirstCard, $dealerSecondCard];
+//        $dealerFirstCard = $deck->drawCard();
+//        $dealerSecondCard = $deck->drawCard();
+//        $this->cards = [$dealerFirstCard, $dealerSecondCard];
     }
 
     //public methods
     public function hit(Deck $deck)
     {
-        $deck->drawCard();
-        $this->cards = [];
+       $playerNextCard = $deck->drawCard();
+        $this->cards = [$playerNextCard];
     }
 
     public function surrender()

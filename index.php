@@ -10,35 +10,67 @@
 
 </head>
 <body>
+<?php
 
+spl_autoload_register('autoLoader');
+
+function autoLoader($className): void
+{
+    $path = 'classes/';
+    $extension = ".class.php";
+    $fullpath = $path . $className . $extension;
+
+    require $fullpath;
+}
+
+?>
 <div class="container">
     <div class="header">
-        <h1>PHP - OOP - BlackJack</h1>
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-6">
+                <h1>BlackJack OOP PHP</h1>
+            </div>
+            <div class="col">
+            </div>
+        </div>
     </div>
+
     <div class="content">
-        <div class="playerSection">
-            <div class="playerAvatar">
-                <img src="assets/playerAvatar.png" alt="Player Avatar">
-                <form action="classes/Blackjack.class.php" method="post">
-                    <input class="hitBtn" type="button" name="hitCard" value="Hit Card" onclick="">
+        <div class="row">
+            <div class="col">
             </div>
 
-        </div>
-        <div class="dealerSection">
-            <div class="dealerAvatar">
-                <img src="assets/dealerAvatar.png" alt="Dealer Avatar">
+            <div class="col-10">
+                <?php
+                $deck = new Deck();
+                $deck->shuffle();
+
+                $player = new Player($deck);
+                $dealer = new Player($deck);
+
+
+                foreach ($deck->getCards() as $card) {
+                    echo "<span style='font-size:100px'>" . $card->getUnicodeCharacter(true) . "</span>";
+                }
+                ?>
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-primary">HIT</button>
+                        <button type="button" class="btn btn-primary">STAND</button>
+                        <button type="button" class="btn btn-primary">SURRENDER</button>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
             </div>
-
+            <div class="col">
+            </div>
         </div>
-
-    </div>
-    <div class="footer">
-<h3>BlackJack OOP PHP</h3>
-        <h5>By G.WebDev</h5>
     </div>
 </div>
-
-
-
 </body>
 </html>
