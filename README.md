@@ -4,26 +4,26 @@
 
 #### 1: Create a new file named Player.php and create a class called Player.
 
-#####2: Add 2 private properties:
-######2.1: cards (array)
-######2.2: lost (bool, default = false)
+##### 2: Add 2 private properties:
+###### 2.1: cards (array)
+###### 2.2: lost (bool, default = false)
 
-#####3: Add 4 empty public methods to this class:
-######3.1: Hit
-######3.2: Surrender
-######3.3: getScore
-######3.4: hasLost
+##### 3: Add 4 empty public methods to this class:
+###### 3.1: Hit
+###### 3.2: Surrender
+###### 3.3: getScore
+###### 3.4: hasLost
 
-#####4: Create a new file named Blackjack.php and create a class called blackjack.
+##### 4: Create a new file named Blackjack.php and create a class called blackjack.
 
-#####5: Add 3 private properties
-######5.1: player
-######5.2: dealer
-######5.3: deck
+##### 5: Add 3 private properties
+###### 5.1: player
+###### 5.2: dealer
+###### 5.3: deck
 
-#####6: Add 2 public methods:
-######6.1: getPlayer
-######6.2: getDealer
+##### 6: Add 2 public methods:
+###### 6.1: getPlayer
+###### 6.2: getDealer
 
 In the constructor do the following:
 Instantiate the Player class twice, insert it into the player variable and a dealer property.
