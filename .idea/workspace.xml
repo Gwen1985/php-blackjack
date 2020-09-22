@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fba188c5-0611-4479-a0b0-dd81f4cf36cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/BlackjackBanner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Blackjack.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Blackjack.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/Player.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Player.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.php" beforeDir="false" afterPath="$PROJECT_DIR$/example.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +77,7 @@
       <workItem from="1600697482511" duration="2919000" />
       <workItem from="1600705576137" duration="6792000" />
       <workItem from="1600758352300" duration="14700000" />
-      <workItem from="1600803239160" duration="7879000" />
+      <workItem from="1600803239160" duration="9070000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1600676095429</created>
@@ -143,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600764450602</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="set layout  + buttons in index.php&#10;get cards when starting a game (see all the cards in the deck =&gt; need to fix)">
+      <created>1600811337548</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600811337548</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +167,8 @@
     <MESSAGE value="created Blackjack.class.php + index.php =&gt; making the hit button work to draw an extra card." />
     <MESSAGE value="minor adjustments" />
     <MESSAGE value="created assets folder for images + sass styling. organize index.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="created assets folder for images + sass styling. organize index.php" />
+    <MESSAGE value="set layout  + buttons in index.php&#10;get cards when starting a game (see all the cards in the deck =&gt; need to fix)" />
+    <option name="LAST_COMMIT_MESSAGE" value="set layout  + buttons in index.php&#10;get cards when starting a game (see all the cards in the deck =&gt; need to fix)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="162" key="#PHP" timestamp="1600696158672">
@@ -199,10 +199,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600762167594" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600764456371">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1600811342831">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600764456371" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600811342831" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600784806860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
