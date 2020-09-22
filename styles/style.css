@@ -1,0 +1,38 @@
+body {
+  background-color: #9957e7;
+}
+body .header {
+  width: auto;
+  height: auto;
+  border: 1px solid white;
+  text-align: center;
+  margin-top: 2%;
+}
+body .content {
+  width: auto;
+  height: 650px;
+  border: 1px solid white;
+}
+body .playerAvatar {
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+}
+body .hitBtn {
+  background-color: blue;
+}
+body .dealerAvatar {
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+  float: right;
+  margin-top: -80px;
+}
+body .footer {
+  width: auto;
+  height: auto;
+  border: 1px solid white;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

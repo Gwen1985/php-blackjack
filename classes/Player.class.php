@@ -28,18 +28,15 @@ class Player
         $this->cards = [];
     }
 
-    public
-    function surrender()
+    public function surrender()
     {
     }
 
-    public
-    function getScore()
+    public function getScore()
     {
     }
 
-    public
-    function hasLost()
+    public function hasLost()
     {
     }
 

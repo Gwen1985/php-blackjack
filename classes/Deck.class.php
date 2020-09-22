@@ -38,5 +38,6 @@ class Deck
     public function drawCard(): ?Card
     {
         return array_shift($this->cards);
+
     }
 }
