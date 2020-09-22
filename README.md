@@ -1,8 +1,8 @@
 # php-blackjack
 
-##Instructions
+## Instructions
 
-####1: Create a new file named Player.php and create a class called Player.
+#### 1: Create a new file named Player.php and create a class called Player.
 
 #####2: Add 2 private properties:
 ######2.1: cards (array)
