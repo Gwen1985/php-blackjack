@@ -31,19 +31,17 @@
 ###### 8.1: Instantiate the Player class twice and insert it into the player variable and a dealer property.
 
 ##### 9: Create a new deck object
+###### 9.1: Shuffle the cards with shuffle method on deck and save this instance in the session.
 
-##### 10: Shuffle the cards with shuffle method on deck and save this instance in the session.
+##### 10: Use forms to send to the index.php page what the player's action is. (i.e. hit/stand/surrender)
+##### 10.1: Use the class' methods to react to these actions.
 
-##### 11: Use forms to send to the index.php page what the player's action is. (i.e. hit/stand/surrender)
+##### 11: Hit should add a card to the player. If this brings the score above 21, set lost property to true.
 
-##### 12: Use the class' methods to react to these actions.
+##### 12: Surrender should make you surrender the game. This sets the property lost in the player instance to true. (CPU wins)
 
-##### 13: Hit should add a card to the player. If this brings the score above 21, set lost property to true.
+##### 13: getScore() loops over all the cards and return the total value of that player cards.
 
-##### 14: Surrender should make you surrender the game. This sets the property lost in the player instance to true. (CPU wins)
+##### 14: Stand does not have a method in the player class but will instead call hit on the dealer instance.
 
-##### 15: getScore() loops over all the cards and return the total value of that player cards.
-
-##### 16: Stand does not have a method in the player class but will instead call hit on the dealer instance.
-
-##### 17: hasLost() will return the bool of the lost property.
+##### 15: hasLost() will return the bool of the lost property.
