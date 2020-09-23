@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 class Player
 {
     private array $cards;
     private bool $lost = false;
-
+    private $deck;
 
     /**
      * player constructor.
@@ -14,19 +16,27 @@ class Player
     {
         $playerFirstCard = $deck->drawCard();
         $playerSecondCard = $deck->drawCard();
-        $this->cards  = [$playerFirstCard, $playerSecondCard];
+        $this->cards = [$playerFirstCard, $playerSecondCard];
 
-//        $dealerFirstCard = $deck->drawCard();
-//        $dealerSecondCard = $deck->drawCard();
-//        $this->cards = [$dealerFirstCard, $dealerSecondCard];
+        $dealerFirstCard = $deck->drawCard();
+        $dealerSecondCard = $deck->drawCard();
+        $this->cards = [$dealerFirstCard, $dealerSecondCard];
     }
+
 
     //public methods
     public function hit(Deck $deck)
     {
-       $playerNextCard = $deck->drawCard();
-        $this->cards = [$playerNextCard];
+        if (isset($_POST['hitBtn'])) {
+            $deck->drawCard();
+
+//        if ($_POST['click']) {
+//            $playerNextCard = $deck->drawCard();
+//            $this->cards = [$playerNextCard];
+//            echo "<span style='font-size:120px'>" . $card->getUnicodeCharacter(true) . "</span>";
+        }
     }
+
 
     public function surrender()
     {
@@ -39,5 +49,14 @@ class Player
     public function hasLost()
     {
     }
+
+    /**
+     * @return array
+     */
+    public function getCards(): array
+    {
+        return $this->cards;
+    }
+
 
 }

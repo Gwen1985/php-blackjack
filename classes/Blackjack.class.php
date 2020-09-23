@@ -1,8 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 class Blackjack
 {
-    // create objects
+    // create properties
     private Player $player;
     private $dealer;
     private Deck $deck;

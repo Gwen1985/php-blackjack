@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
     <title>Blackjack-PHP</title>
 
 </head>
@@ -20,7 +21,7 @@ function autoLoader($className): void
     $extension = ".class.php";
     $fullpath = $path . $className . $extension;
 
-    require $fullpath;
+    require_once $fullpath;
 }
 
 ?>
@@ -30,7 +31,7 @@ function autoLoader($className): void
             <div class="col">
             </div>
             <div class="col-6">
-                <h1>BlackJack OOP PHP</h1>
+                <h1>G.WebDev BlackJack</h1>
             </div>
             <div class="col">
             </div>
@@ -39,36 +40,53 @@ function autoLoader($className): void
 
     <div class="content">
         <div class="row">
-            <div class="col">
+            <div class="col-2">
             </div>
 
-            <div class="col-10">
+            <div class="col-4">
+                <h4>Player</h4>
                 <?php
-                $deck = new Deck();
-                $deck->shuffle();
 
-                $player = new Player($deck);
-                $dealer = new Player($deck);
+                $blackjack = new Blackjack;
 
-
-                foreach ($deck->getCards() as $card) {
-                    echo "<span style='font-size:100px'>" . $card->getUnicodeCharacter(true) . "</span>";
+                foreach ($blackjack->getPlayer()->getCards() as $card) {
+                    echo "<span style='font-size:120px'>" . $card->getUnicodeCharacter(true) . "</span>";
                 }
                 ?>
-                <div class="row">
-                    <div class="col">
-                    </div>
-                    <div class="col-6">
-                        <button type="button" class="btn btn-primary">HIT</button>
-                        <button type="button" class="btn btn-primary">STAND</button>
-                        <button type="button" class="btn btn-primary">SURRENDER</button>
-                    </div>
-                    <div class="col">
-                    </div>
+            </div>
+
+            <div class="col-4">
+                <h4>Dealer</h4>
+                <?php
+
+                foreach ($blackjack->getDealer()->getCards() as $card) {
+                    echo "<span style='font-size:120px'>" . $card->getUnicodeCharacter(true) . "</span>";
+
+                }
+                ?>
+            </div>
+
+            <div class="col-2">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                </div>
+
+                <div class="col-12">
+                    <form action="" method="post">
+                        <input class="btn btn-primary" type="submit" name="hitBtn" value="HIT"/>
+                        <input class="btn btn-primary" type="submit" name="standBtn" value="STAND"/>
+                        <input class="btn btn-danger" type="submit" name="surrenderBtn" value="SURRENDER"/>
+
+                    </form>
+                </div>
+
+                <div class="col">
                 </div>
             </div>
-            <div class="col">
-            </div>
+        </div>
+        <div class="col">
         </div>
     </div>
 </div>
