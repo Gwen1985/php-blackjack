@@ -34,7 +34,7 @@
 ###### 9.1: Shuffle the cards with shuffle method on deck and save this instance in the session.
 
 ##### 10: Use forms to send to the index.php page what the player's action is. (i.e. hit/stand/surrender)
-##### 10.1: Use the class' methods to react to these actions.
+###### 10.1: Use the class' methods to react to these actions.
 
 ##### 11: Hit should add a card to the player. If this brings the score above 21, set lost property to true.
 
