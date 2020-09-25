@@ -38,6 +38,10 @@ class Player
 
     public function getScore()
     {
+        foreach ($this->cards as $card) {
+            $totalscore += $card->getValue();
+        }
+        return $totalscore;
     }
 
     public function hasLost($lost)
