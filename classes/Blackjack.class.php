@@ -6,7 +6,7 @@ class Blackjack
 {
     // create properties
     private Player $player;
-    private $dealer;
+    private Dealer $dealer;
     private Deck $deck;
 
     /**
@@ -26,7 +26,8 @@ class Blackjack
         // create a new player
         $this->player = new Player($this->deck);
         // create a new dealer
-        $this->dealer = new Player($this->deck);
+//        $this->dealer = new Player($this->deck);
+        $this->dealer = new Dealer($this->deck);
     }
 
     /**

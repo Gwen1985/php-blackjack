@@ -45,46 +45,70 @@ if (isset($_POST['hitBtn'])) {
 
     $_SESSION['blackjack'] = serialize($blackjack);
 }
+
+//if (isset($_POST['standBtn'])) {
+//    $blackjack->getPlayer()->
+//}
+
+
 ?>
 
 <div class="container">
+
     <div class="header">
+
         <div class="row">
+
             <div class="col">
             </div>
+
             <div class="col-6">
                 <h1>G.WebDev BlackJack</h1>
             </div>
+
             <div class="col">
             </div>
+
         </div>
+
     </div>
 
     <div class="content">
+
         <div class="row">
+
             <div class="col-2">
             </div>
 
-            <div class="col-4">
-                <?php foreach ($blackjack->getPlayer()->getCards() as $card) {
+            <div class="col-4" id="PlayerCards">
+                <?php
+                //SHOW PLAYER CARDS
+                foreach ($blackjack->getPlayer()->getCards() as $card) {
                     echo "<span style='font-size:120px'>" . $card->getUnicodeCharacter(true) . "</span>";
                 }
+                // SHOW PLAYER HAND SCORE
+                echo "<br>";
+                echo "<span style='font-size: 28px'>" . "Player &nbsp;&nbsp;" . $blackjack->getPlayer()->getPlayerScore() . "</span>";
                 ?>
-                <h4>Player</h4>
             </div>
 
-            <div class="col-4">
-                <?php foreach ($blackjack->getDealer()->getCards() as $card) {
+            <div class="col-4" id="dealerCards">
+                <?php
+                //SHOW DEALER CARDS
+                foreach ($blackjack->getDealer()->getCards() as $card) {
                     echo "<span style='font-size:120px'>" . $card->getUnicodeCharacter(true) . "</span>";
                 }
+                //SHOW DEALER HAND SCORE
+                echo "<br>";
+                echo "<span style='font-size: 30px'>" . "Dealer &nbsp;&nbsp;" . $blackjack->getDealer()->getDealerScore() . "</span>";
                 ?>
-                <h4>Dealer</h4>
             </div>
 
             <div class="col-2">
             </div>
 
             <div class="row">
+
                 <div class="col">
                 </div>
 
@@ -94,14 +118,16 @@ if (isset($_POST['hitBtn'])) {
                         <input class="btn btn-primary" type="submit" name="hitBtn" value="HIT"/>
                         <input class="btn btn-primary" type="submit" name="standBtn" value="STAND"/>
                         <input class="btn btn-danger" type="submit" name="surrenderBtn" value="SURRENDER"/>
-
                     </form>
                 </div>
 
                 <div class="col">
                 </div>
+
             </div>
         </div>
+
+
         <div class="col">
         </div>
     </div>

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 class Player
 {
-    private array $cards;
+    protected array $cards;
     private bool $lost = false;
     private $deck;
 
@@ -18,9 +18,6 @@ class Player
         $playerSecondCard = $deck->drawCard();
         $this->cards = [$playerFirstCard, $playerSecondCard];
 
-//        $dealerFirstCard = $deck->drawCard();
-//        $dealerSecondCard = $deck->drawCard();
-//        $this->cards = [$dealerFirstCard, $dealerSecondCard];
     }
 
 
@@ -36,8 +33,9 @@ class Player
     {
     }
 
-    public function getScore()
+    public function getPlayerScore()
     {
+        $totalscore = 0;
         foreach ($this->cards as $card) {
             $totalscore += $card->getValue();
         }
