@@ -45,4 +45,12 @@ class Blackjack
         return $this->dealer;
     }
 
+    /**
+     * @return Deck
+     */
+    public function getDeck(): Deck
+    {
+        return $this->deck;
+    }
+
 }

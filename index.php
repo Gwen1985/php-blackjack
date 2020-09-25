@@ -24,7 +24,29 @@ function autoLoader($className): void
     require_once $fullpath;
 }
 
+session_start();
+
+//$blackjack = new Blackjack;
+
+if (isset($_POST['new'])) {
+    unset($blackjack);
+    session_unset();
+}
+
+if (!isset($_SESSION['blackjack'])) {
+    $blackjack = new Blackjack();
+    $_SESSION['blackjack'] = serialize($blackjack);
+} else {
+    $blackjack = unserialize($_SESSION['blackjack'], [Blackjack::class]);
+}
+
+if (isset($_POST['hitBtn'])) {
+    $blackjack->getPlayer()->hit($blackjack->getDeck());
+
+    $_SESSION['blackjack'] = serialize($blackjack);
+}
 ?>
+
 <div class="container">
     <div class="header">
         <div class="row">
@@ -44,26 +66,19 @@ function autoLoader($className): void
             </div>
 
             <div class="col-4">
-                <h4>Player</h4>
-                <?php
-
-                $blackjack = new Blackjack;
-
-                foreach ($blackjack->getPlayer()->getCards() as $card) {
+                <?php foreach ($blackjack->getPlayer()->getCards() as $card) {
                     echo "<span style='font-size:120px'>" . $card->getUnicodeCharacter(true) . "</span>";
                 }
                 ?>
+                <h4>Player</h4>
             </div>
 
             <div class="col-4">
-                <h4>Dealer</h4>
-                <?php
-
-                foreach ($blackjack->getDealer()->getCards() as $card) {
+                <?php foreach ($blackjack->getDealer()->getCards() as $card) {
                     echo "<span style='font-size:120px'>" . $card->getUnicodeCharacter(true) . "</span>";
-
                 }
                 ?>
+                <h4>Dealer</h4>
             </div>
 
             <div class="col-2">
@@ -75,6 +90,7 @@ function autoLoader($className): void
 
                 <div class="col-12">
                     <form action="" method="post">
+                        <input class="btn btn-primary" type="submit" name="new" value="NEW GAME"/>
                         <input class="btn btn-primary" type="submit" name="hitBtn" value="HIT"/>
                         <input class="btn btn-primary" type="submit" name="standBtn" value="STAND"/>
                         <input class="btn btn-danger" type="submit" name="surrenderBtn" value="SURRENDER"/>

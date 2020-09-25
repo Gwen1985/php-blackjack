@@ -18,23 +18,17 @@ class Player
         $playerSecondCard = $deck->drawCard();
         $this->cards = [$playerFirstCard, $playerSecondCard];
 
-        $dealerFirstCard = $deck->drawCard();
-        $dealerSecondCard = $deck->drawCard();
-        $this->cards = [$dealerFirstCard, $dealerSecondCard];
+//        $dealerFirstCard = $deck->drawCard();
+//        $dealerSecondCard = $deck->drawCard();
+//        $this->cards = [$dealerFirstCard, $dealerSecondCard];
     }
 
 
     //public methods
     public function hit(Deck $deck)
     {
-        if (isset($_POST['hitBtn'])) {
-            $deck->drawCard();
-
-//        if ($_POST['click']) {
-//            $playerNextCard = $deck->drawCard();
-//            $this->cards = [$playerNextCard];
-//            echo "<span style='font-size:120px'>" . $card->getUnicodeCharacter(true) . "</span>";
-        }
+          $this->cards[] = $deck->drawCard();
+          return $this->cards;
     }
 
 
@@ -46,8 +40,9 @@ class Player
     {
     }
 
-    public function hasLost()
+    public function hasLost($lost)
     {
+
     }
 
     /**
