@@ -55,32 +55,18 @@ if (isset($_POST['hitBtn'])) {
 
 <div class="container">
 
-    <div class="header">
-
-        <div class="row">
-
-            <div class="col">
-            </div>
-
-            <div class="col-6">
+    <div class="row">
+        <div class="col-xl">
+            <div class="header">
                 <h1>G.WebDev BlackJack</h1>
             </div>
-
-            <div class="col">
-            </div>
-
         </div>
-
     </div>
 
-    <div class="content">
+    <div class="row">
 
-        <div class="row">
-
-            <div class="col-2">
-            </div>
-
-            <div class="col-4" id="PlayerCards">
+        <div class="col-xl">
+            <div id="PlayerCards">
                 <?php
                 //SHOW PLAYER CARDS
                 foreach ($blackjack->getPlayer()->getCards() as $card) {
@@ -91,8 +77,10 @@ if (isset($_POST['hitBtn'])) {
                 echo "<span style='font-size: 28px'>" . "Player &nbsp;&nbsp;" . $blackjack->getPlayer()->getPlayerScore() . "</span>";
                 ?>
             </div>
+        </div>
 
-            <div class="col-4" id="dealerCards">
+        <div class="col-xl">
+            <div id="dealerCards">
                 <?php
                 //SHOW DEALER CARDS
                 foreach ($blackjack->getDealer()->getCards() as $card) {
@@ -103,33 +91,18 @@ if (isset($_POST['hitBtn'])) {
                 echo "<span style='font-size: 30px'>" . "Dealer &nbsp;&nbsp;" . $blackjack->getDealer()->getDealerScore() . "</span>";
                 ?>
             </div>
-
-            <div class="col-2">
-            </div>
-
-            <div class="row">
-
-                <div class="col">
-                </div>
-
-                <div class="col-12">
-                    <form action="" method="post">
-                        <input class="btn btn-primary" type="submit" name="new" value="NEW GAME"/>
-                        <input class="btn btn-primary" type="submit" name="hitBtn" value="HIT"/>
-                        <input class="btn btn-primary" type="submit" name="standBtn" value="STAND"/>
-                        <input class="btn btn-danger" type="submit" name="surrenderBtn" value="SURRENDER"/>
-                    </form>
-                </div>
-
-                <div class="col">
-                </div>
-
-            </div>
         </div>
+    </div>
 
-
-        <div class="col">
-        </div>
+    <div class="row">
+        <div class="col-xl">
+            <form action="" method="post">
+                <input class="btn btn-primary" type="submit" name="new" value="NEW GAME"/>
+                <input class="btn btn-primary" type="submit" name="hitBtn" value="HIT"/>
+                <input class="btn btn-primary" type="submit" name="standBtn" value="STAND"/>
+                <input class="btn btn-danger" type="submit" name="surrenderBtn" value="SURRENDER"/>
+            </form>
+        </div
     </div>
 </div>
 </body>
