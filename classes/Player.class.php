@@ -44,7 +44,10 @@ class Player
 
     public function hasLost($lost)
     {
-
+//        $this->lost->$this->getPlayerScore();
+//        if ($this->getPlayerScore() >= 22) {
+//            $this->lost = true;
+//        }
     }
 
     /**
