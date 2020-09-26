@@ -15,4 +15,11 @@ class Dealer extends Player
         return $totalscore;
     }
 
+    public function hasLost()
+    {
+        if ($this->getDealerScore() >= 22) {
+            echo "YOU LOSE";
+        }
+
+    }
 }

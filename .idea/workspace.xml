@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fba188c5-0611-4479-a0b0-dd81f4cf36cf" name="Default Changelist" comment="styling the game">
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/output-onlinepngtools.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/HackerIMG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Dealer.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Dealer.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Player.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Player.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +92,7 @@
       <workItem from="1601115922059" duration="241000" />
       <workItem from="1601116196181" duration="2128000" />
       <workItem from="1601127874430" duration="2270000" />
-      <workItem from="1601137105625" duration="5144000" />
+      <workItem from="1601137105625" duration="7592000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1600676095429</created>
@@ -216,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601076407868</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="styling the game">
+      <created>1601156321752</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1601156321752</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,14 +295,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601028746421" />
+    <state x="770" y="222" key="RollbackChangesDialog" timestamp="1601156330600">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="770" y="222" key="RollbackChangesDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601156330600" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1601116582051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601116582051" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601076412898">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601156335989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601076412898" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601156335989" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600812611991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

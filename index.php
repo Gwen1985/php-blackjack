@@ -43,6 +43,13 @@ if (!isset($_SESSION['blackjack'])) {
 if (isset($_POST['hitBtn'])) {
     $blackjack->getPlayer()->hit($blackjack->getDeck());
 
+    if (isset($_POST['surrenderBtn'])) {
+        $blackjack->getPlayer()->hasLost();
+    }
+
+    if (isset($_POST['stayBtn'])) {
+        $blackjack->getDealer()->hasLost();
+    }
 
 
     $_SESSION['blackjack'] = serialize($blackjack);
@@ -69,9 +76,10 @@ if (isset($_POST['hitBtn'])) {
             <div id="PlayerCards">
                 <?php
 
-//                echo "<pre>";
-//                var_dump($blackjack->getPlayer()->hit($blackjack->getDeck()));
-//                echo "</pre>";
+
+                //                echo "<pre>";
+                //                var_dump($blackjack->getPlayer()->hit($blackjack->getDeck()));
+                //                echo "</pre>";
                 //SHOW PLAYER CARDS
                 echo "<br>";
                 foreach ($blackjack->getPlayer()->getCards() as $card) {
@@ -80,9 +88,9 @@ if (isset($_POST['hitBtn'])) {
                 // SHOW PLAYER HAND SCORE
                 echo "<br>";
                 echo "<span style='font-size: 30px'>" . "Player &nbsp;&nbsp;" . $blackjack->getPlayer()->getPlayerScore() . "</span>";
-                //                if ($blackjack->getPlayer()->hasLost(true)) {
-                //                    echo "Player Lose";
-                //                }
+                if ($blackjack->getPlayer()->hasLost(true)) {
+                    echo "Player Lose";
+                }
                 ?>
             </div>
         </div>

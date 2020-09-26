@@ -31,6 +31,9 @@ class Player
 
     public function surrender()
     {
+        if ($_POST['surrenderBtn']){
+            echo "YOU GAVE UP";
+        }
     }
 
     public function getPlayerScore()
@@ -43,8 +46,11 @@ class Player
         return $totalscore;
     }
 
-    public function hasLost($lost)
-    {
+    public function hasLost(){
+        if ($this->getPlayerScore() >= 22){
+            echo "<span style='background-color: red'> YOU LOSE</span>" ;
+        }
+
 //        foreach ($this->cards as $card) {
 //            $totalscore += $card->getValue($lost);
 //            if ($lost >= 22){
