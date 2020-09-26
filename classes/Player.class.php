@@ -24,8 +24,8 @@ class Player
     //public methods
     public function hit(Deck $deck)
     {
-          $this->cards[] = $deck->drawCard();
-          return $this->cards;
+        $this->cards[] = $deck->drawCard();
+        return $this->cards;
     }
 
 
@@ -36,6 +36,7 @@ class Player
     public function getPlayerScore()
     {
         $totalscore = 0;
+
         foreach ($this->cards as $card) {
             $totalscore += $card->getValue();
         }
@@ -44,10 +45,15 @@ class Player
 
     public function hasLost($lost)
     {
-//        $this->lost->$this->getPlayerScore();
-//        if ($this->getPlayerScore() >= 22) {
-//            $this->lost = true;
+//        foreach ($this->cards as $card) {
+//            $totalscore += $card->getValue($lost);
+//            if ($lost >= 22){
+//                $this->lost = true;
+//            }
 //        }
+//        if ($this->lost = true) {
+//            echo "Player lose";
+//    }
     }
 
     /**

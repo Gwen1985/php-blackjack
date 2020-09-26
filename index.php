@@ -43,12 +43,10 @@ if (!isset($_SESSION['blackjack'])) {
 if (isset($_POST['hitBtn'])) {
     $blackjack->getPlayer()->hit($blackjack->getDeck());
 
+
+
     $_SESSION['blackjack'] = serialize($blackjack);
 }
-
-//if (isset($_POST['standBtn'])) {
-//    $blackjack->getPlayer()->
-//}
 
 
 ?>
@@ -67,10 +65,13 @@ if (isset($_POST['hitBtn'])) {
 
     <!--   CONTENT   -->
     <div class="row">
-
         <div class="col-xl">
             <div id="PlayerCards">
                 <?php
+
+//                echo "<pre>";
+//                var_dump($blackjack->getPlayer()->hit($blackjack->getDeck()));
+//                echo "</pre>";
                 //SHOW PLAYER CARDS
                 echo "<br>";
                 foreach ($blackjack->getPlayer()->getCards() as $card) {
@@ -78,14 +79,13 @@ if (isset($_POST['hitBtn'])) {
                 }
                 // SHOW PLAYER HAND SCORE
                 echo "<br>";
-                echo "<span style='font-size: 28px'>" . "Player &nbsp;&nbsp;" . $blackjack->getPlayer()->getPlayerScore() . "</span>";
+                echo "<span style='font-size: 30px'>" . "Player &nbsp;&nbsp;" . $blackjack->getPlayer()->getPlayerScore() . "</span>";
                 //                if ($blackjack->getPlayer()->hasLost(true)) {
                 //                    echo "Player Lose";
                 //                }
                 ?>
             </div>
         </div>
-
         <div class="col-xl">
             <div id="dealerCards">
                 <?php
@@ -101,7 +101,6 @@ if (isset($_POST['hitBtn'])) {
             </div>
         </div>
     </div>
-
     <!--   Buttons   -->
     <div class="row">
         <div class="col-xl">
@@ -113,18 +112,17 @@ if (isset($_POST['hitBtn'])) {
                     <input class="btn btn-danger" type="submit" name="surrenderBtn" value="SURRENDER"/>
                 </form>
             </div>
-        </div
+        </div>
     </div>
-
+    <!--       FOOTER-->
     <div class="row">
         <div class="col-xl">
             <div class="footer">
-                <h5>G.WebDev &#169;</h5>
+                <h6>G.WebDev&#169; Creations</h6>
             </div>
         </div>
     </div>
 </div>
-
 
 </body>
 </html>

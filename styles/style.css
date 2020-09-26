@@ -1,6 +1,6 @@
 body {
   font-family: "Dancing Script", cursive;
-  background-color: #000000;
+  background-color: #740698;
   box-sizing: content-box;
 }
 
@@ -8,14 +8,15 @@ body {
   font-size: 180px;
   text-align: center;
   color: #ca930f;
-  height: 250px;
+  height: 200px;
 }
 
 #PlayerCards, #dealerCards {
-  background-color: #dcdbf6;
-  opacity: 60%;
+  background-color: #5d5d6b;
+  opacity: 70%;
+  border: 5px inset #aedd15;
   border-radius: 8px;
-  margin-left: 15px;
+  margin-left: 20px;
   text-align: center;
 }
 
@@ -26,7 +27,8 @@ body {
 
 .footer {
   text-align: center;
-  color: blueviolet;
+  padding-top: 60px;
+  position: center;
 }
 
 /*# sourceMappingURL=style.css.map */

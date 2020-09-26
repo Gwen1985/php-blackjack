@@ -19,16 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fba188c5-0611-4479-a0b0-dd81f4cf36cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/HackerIMG.jpg" afterDir="false" />
+    <list default="true" id="fba188c5-0611-4479-a0b0-dd81f4cf36cf" name="Default Changelist" comment="styling the game">
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/output-onlinepngtools.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/BlackjackBanner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/blackjack-wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/dealerAvatar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/neonaces.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/playerAvatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/HackerIMG.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Player.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Player.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
@@ -67,9 +62,12 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Becode/Devprojects/bewerkbaar/node_modules/prettier" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\gwene\Desktop\Becode\Devprojects\bewerkbaar\node_modules\prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -93,7 +91,11 @@
       <workItem from="1600803239160" duration="10076000" />
       <workItem from="1600844652090" duration="27695000" />
       <workItem from="1600932030431" duration="8439000" />
-      <workItem from="1601016848387" duration="37238000" />
+      <workItem from="1601016848387" duration="39599000" />
+      <workItem from="1601115922059" duration="241000" />
+      <workItem from="1601116196181" duration="2128000" />
+      <workItem from="1601127874430" duration="2270000" />
+      <workItem from="1601137105625" duration="5144000" />
     </task>
     <task id="LOCAL-00001" summary="initial setup">
       <created>1600676095429</created>
@@ -207,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601072594898</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="styling the game">
+      <created>1601076407868</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1601076407868</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,14 +251,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="styling the game" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="715" y="343" key="#Notifications" timestamp="1601116593408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="343" key="#Notifications/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601116593408" />
     <state x="667" y="162" key="#PHP" timestamp="1600696158672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="162" key="#PHP/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600696158672" />
+    <state x="552" y="160" key="#Plugins" timestamp="1601116226967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="160" key="#Plugins/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601116226967" />
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1600853229220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600853229220" />
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601116133715">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601116133715" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1600721779928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -258,6 +279,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="629" y="297" key="EditFileWatcherDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600761197915" />
+    <state x="806" y="266" key="FileChooserDialogImpl" timestamp="1601116575724">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="806" y="266" key="FileChooserDialogImpl/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601116575724" />
     <state x="784" y="242" key="NewPhpClassDialog" timestamp="1600682148070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -266,21 +291,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601028746421" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1600874033309">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1601116582051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600874033309" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601072600553">
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601116582051" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601076412898">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601072600553" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601076412898" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600812611991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600812611991" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1600784806860">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601116240589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1600784806860" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/460.1080.1000.504@0.0.1920.1040" timestamp="1601116240589" />
   </component>
 </project>
